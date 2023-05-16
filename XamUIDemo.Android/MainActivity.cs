@@ -10,7 +10,7 @@ namespace XamUIDemo.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
-            int testBuilCommit = "test";
+           
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
