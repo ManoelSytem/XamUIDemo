@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AppCenter.Crashes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -19,7 +20,18 @@ namespace XamUIDemo
         }
         protected void ClickLoginPage(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new LoginPages.LoginPage2());
+            try
+            {
+                Crashes.GenerateTestCrash();
+            }
+            catch (Exception ex)
+            {
+                Crashes.TrackError(ex, new Dictionary<string, string>()
+                {
+                    { "isLogin",  "false" }
+                });
+            }
+          
         }
         protected void ClickDellyShop(object sender, EventArgs e)
         {
