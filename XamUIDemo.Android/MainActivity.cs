@@ -20,6 +20,7 @@ namespace XamUIDemo.Droid
             AppCenter.Start("cf3d2468-2fa4-4c1a-9754-92554dae3e71",
                   typeof(Analytics), typeof(Crashes));
 
+
             base.OnCreate(savedInstanceState);
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);

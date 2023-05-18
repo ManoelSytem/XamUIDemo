@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using Microsoft.AppCenter;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +18,10 @@ namespace XamUIDemo
 
         protected override void OnStart()
         {
-            // Handle when your app starts
+
+            AppCenter.Start("cf3d2468-2fa4-4c1a-9754-92554dae3e71",
+                  typeof(Analytics), typeof(Crashes));
+
         }
 
         protected override void OnSleep()
