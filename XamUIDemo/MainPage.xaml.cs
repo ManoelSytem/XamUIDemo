@@ -1,4 +1,5 @@
-﻿using Microsoft.AppCenter.Crashes;
+﻿using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,7 +36,7 @@ namespace XamUIDemo
         }
         protected void ClickDellyShop(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://codecanyon.net/item/dellyshop-ecommerce-application-template-xamarin-forms-androidios/25307064"));
+            Analytics.TrackEvent("Teste mapemento de eventos");
         }
         protected void ClickXFShop(object sender, EventArgs e)
         {
