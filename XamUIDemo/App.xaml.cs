@@ -20,7 +20,8 @@ namespace XamUIDemo
         {
 
            
-            AppCenter.Start("android=cf3d2468-2fa4-4c1a-9754-92554dae3e71;",
+            AppCenter.Start("android=cf3d2468-2fa4-4c1a-9754-92554dae3e71;", 
+                typeof(Analytics),
                  typeof(Crashes));
 
 

@@ -21,7 +21,7 @@ namespace XamUIDemo
         protected void ClickLoginPage(object sender, EventArgs e)
         {
             try
-            {
+             {
                 Crashes.GenerateTestCrash();
             }
             catch (Exception ex)
