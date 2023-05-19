@@ -1,6 +1,7 @@
 ﻿using System;
 using XamUIDemo.Styles;
 using Xamarin.Forms;
+using GradientStopCollection = XamUIDemo.Styles.GradientStopCollection;
 
 namespace XamUIDemo.Renderers
 {
