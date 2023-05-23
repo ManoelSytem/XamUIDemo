@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using XamUIDemo.Modules.Login;
 
 namespace XamUIDemo
 {
@@ -21,18 +22,8 @@ namespace XamUIDemo
         }
         protected void ClickLoginPage(object sender, EventArgs e)
         {
-            try
-             {
-                Crashes.GenerateTestCrash();
-            }
-            catch (Exception ex)
-            {
-                Crashes.TrackError(ex, new Dictionary<string, string>()
-                {
-                    { "isLogin",  "teste" }
-                });
-            }
-          
+            Navigation.PushAsync(new LoginPage2());
+
         }
         protected void ClickDellyShop(object sender, EventArgs e)
         {

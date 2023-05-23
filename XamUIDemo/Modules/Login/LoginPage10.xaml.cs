@@ -4,11 +4,11 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using XamUIDemo.Animations;
 
-namespace XamUIDemo.LoginPages
+namespace XamUIDemo.Modules.Login
 {
-    public partial class LoginPage14 : ContentPage
+    public partial class LoginPage10 : ContentPage
     {
-        public LoginPage14()
+        public LoginPage10()
         {
             InitializeComponent();
 
@@ -19,10 +19,9 @@ namespace XamUIDemo.LoginPages
             Task.Run(async () =>
             {
                 await ViewAnimations.FadeAnimY(Logo);
-                await ViewAnimations.FadeAnimY(EmailPancake);
-                await ViewAnimations.FadeAnimY(PassPancake);
+                await ViewAnimations.FadeAnimY(FaceButton);
                 await ViewAnimations.FadeAnimY(LoginButton);
-
+                await ViewAnimations.FadeAnimY(SignupButton);
             });
         }
         protected void Back(object s, EventArgs e)
@@ -31,7 +30,7 @@ namespace XamUIDemo.LoginPages
         }
         protected void Login(object s, EventArgs e)
         {
-            Navigation.PopToRootAsync();
+            Navigation.PushAsync(new LoginPage14());
         }
     }
 }

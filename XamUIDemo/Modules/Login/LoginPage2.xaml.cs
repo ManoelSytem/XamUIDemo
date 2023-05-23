@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using XamUIDemo.Animations;
 
-namespace XamUIDemo.LoginPages
+namespace XamUIDemo.Modules.Login
 {
-    public partial class LoginPage10 : ContentPage
+    public partial class LoginPage2 : ContentPage
     {
-        public LoginPage10()
+        public LoginPage2()
         {
             InitializeComponent();
-
         }
         protected override void OnAppearing()
         {
@@ -19,9 +17,8 @@ namespace XamUIDemo.LoginPages
             Task.Run(async () =>
             {
                 await ViewAnimations.FadeAnimY(Logo);
-                await ViewAnimations.FadeAnimY(FaceButton);
-                await ViewAnimations.FadeAnimY(LoginButton);
-                await ViewAnimations.FadeAnimY(SignupButton);
+                await ViewAnimations.FadeAnimY(MainStack);
+
             });
         }
         protected void Back(object s, EventArgs e)
@@ -30,7 +27,7 @@ namespace XamUIDemo.LoginPages
         }
         protected void Login(object s, EventArgs e)
         {
-            Navigation.PushAsync(new LoginPage14());
+            Navigation.PushAsync(new LoginPage10());
         }
     }
 }
