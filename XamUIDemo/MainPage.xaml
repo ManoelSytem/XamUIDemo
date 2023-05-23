@@ -28,14 +28,14 @@
         </renderers:PancakeView>
         <Label
             FontAttributes="Bold"
-            Text="Best Xamarin Forms Apps"
+            Text="Xamarin Forms Apps"
             TextColor="White"
             HorizontalOptions="CenterAndExpand"
             VerticalOptions="CenterAndExpand" />
         <renderers:PancakeView
             HeightRequest="50"
             BackgroundGradientAngle="270"
-            BackgroundGradientEndColor="#6D67D2"
+            BackgroundGradientEndColor="Red"
             BackgroundGradientStartColor="#4E4A96"
             CornerRadius="10"
             Elevation="5"
