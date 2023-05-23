@@ -22,7 +22,7 @@ namespace XamUIDemo
         }
         protected void ClickLoginPage(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new LoginPage2());
+            Navigation.PushAsync(new AuthPage());
 
         }
         protected void ClickDellyShop(object sender, EventArgs e)
