@@ -29,7 +29,8 @@ namespace XamUIDemo
             {
                 Crashes.TrackError(ex, new Dictionary<string, string>()
                 {
-                    { "isLogin",  "teste" }
+                    { "isLogin",  "teste" },
+                    { "new",  "teste" }
                 });
             }
           
