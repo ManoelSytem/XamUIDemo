@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:resource="XamUIDemo.Resources"
+             x:Class="XamUIDemo.Modules.Payments.payment"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:ffimageloadingsvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             BackgroundColor="#FFFFFF"
+             >
+
+    <NavigationPage.TitleView>
+        <StackLayout>
+            <Label Text="Pagar agora"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" 
+                   FontSize="20" 
+                   Margin="0, 0, 75, 0" />
+        </StackLayout>
+    </NavigationPage.TitleView>
+
+    <AbsoluteLayout Margin="10" >
+
+        <Label x:Name="labelUnidconsumidora"
+	    FontFamily="Source Sans Pro"
+	    FontAttributes="Bold"
+	    HorizontalTextAlignment="Start"
+	    FontSize="18"
+	    TextColor="#000000"
+	    Text="Unidade  consumidora"
+         />
+
+        <Label x:Name="valueUnidconsumidora"
+			FontFamily="Source Sans Pro"
+			HorizontalTextAlignment="Center"
+			FontSize="16"
+			TextColor="#000000"
+			AbsoluteLayout.LayoutBounds="0,30"
+			Text="1/5658656"
+	        />
+
+        <Label x:Name="labelreferencia"
+	    FontFamily="Source Sans Pro"
+	    FontAttributes="Bold"
+	    HorizontalTextAlignment="Start"
+	    FontSize="18"
+	    TextColor="#000000"
+	    AbsoluteLayout.LayoutBounds="210,0,97,43"
+	    Text="Referência"
+        />
+
+        <Label x:Name="valueReferencia"
+		FontFamily="Source Sans Pro"
+		FontSize="16"
+		TextColor="#000000"
+		AbsoluteLayout.LayoutBounds="210,30,97,43"
+		Text="Julho/2023"
+	    />
+
+        <Label x:Name="labelVencimento"
+		FontFamily="Source Sans Pro"
+		FontAttributes="Bold"
+		FontSize="18"
+		TextColor="#000000"
+		AbsoluteLayout.LayoutBounds="0,60"
+		Text="Vencimento"
+	     />
+
+        <Label x:Name="valueVencimento"
+		FontFamily="Source Sans Pro"
+		FontSize="16"
+		TextColor="#000000"
+		AbsoluteLayout.LayoutBounds="0,90"
+		Text="17/05/2023"
+	     />
+
+			<Label x:Name="labelvalor"
+			FontFamily="Source Sans Pro"
+			FontAttributes="Bold"
+			FontSize="18"
+			TextColor="#000000"
+			AbsoluteLayout.LayoutBounds="205,60,54,43"
+			Text="Valor"
+		    />
+
+			<Label x:Name="valueMoney"
+				FontFamily="Source Sans Pro"
+				FontSize="16"
+				TextColor="#000000"
+				AbsoluteLayout.LayoutBounds="210,90,75,41"
+				Text="R$ 656,00"
+             />
+
+		<Label x:Name="__p__opcaopagamento"
+			FontFamily="Source Sans Pro"
+			FontAttributes="Bold"
+			HorizontalTextAlignment="Center"
+			FontSize="18"
+			TextColor="#000000"
+			AbsoluteLayout.LayoutBounds="80,200,186,43"
+			Text="Opções de pagamento"
+		 />
+
+     
+        <BoxView x:Name="boxViewPix"
+	    CornerRadius="10"
+	    Color="#FB9F16"
+	    AbsoluteLayout.LayoutBounds="28,250,123,106" />
+
+        <BoxView x:Name="boxViewBank"
+	    CornerRadius="10"
+	    Color="#06748C"
+	    AbsoluteLayout.LayoutBounds="211,250,123,106"/>
+
+        <BoxView x:Name="boxViewCredit"
+	    CornerRadius="10"
+	    Color="#06748C"
+	    AbsoluteLayout.LayoutBounds="27,380,123,106"/>
+
+        <BoxView x:Name="boxViewDebito"
+	    CornerRadius="10"
+	    Color="#06748C"
+	    AbsoluteLayout.LayoutBounds="209,380,123,106"/>
+
+
+
+        <Label x:Name="labelPix"
+			FontFamily="Source Sans Pro"
+			HorizontalTextAlignment="Center"
+			FontSize="16"
+			TextColor="#FFFFFF"
+            FontAttributes="Bold"
+			AbsoluteLayout.LayoutBounds="37,315,112,62"
+		  	Text="PAGAR COM PIX"
+		     />
+
+        <ffimageloadingsvg:SvgCachedImage 
+                 Source="pixsvgrepocom.svg"
+            AbsoluteLayout.LayoutBounds="35,260,112,50"/>
+
+        <Label x:Name="labelBank"
+			FontFamily="Source Sans Pro"
+			HorizontalTextAlignment="Center"
+			FontSize="16"
+			TextColor="#FFFFFF"
+            FontAttributes="Bold"
+			AbsoluteLayout.LayoutBounds="211,315,123,106"
+		  	Text="PAGAR NO APP DO BANCO"
+		     />
+
+        <ffimageloadingsvg:SvgCachedImage 
+                 Source="bankvgrepocom.svg"
+            AbsoluteLayout.LayoutBounds="211,260,123,50"/>
+
+    </AbsoluteLayout>
+
+</ContentPage>

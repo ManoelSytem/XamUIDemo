@@ -4,6 +4,7 @@ using Microsoft.AppCenter.Crashes;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamUIDemo.Modules.Payments;
 
 namespace XamUIDemo
 {
@@ -13,7 +14,7 @@ namespace XamUIDemo
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new payment());
         }
 
         protected override void OnStart()
